@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Laboratório de Strings e Datas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+    section {
+      background: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    input, textarea, button {
+      margin: 5px 0;
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #999;
+      padding: 5px;
+      text-align: left;
+    }
+    .fraca { color: red; }
+    .moderada { color: orange; }
+    .forte { color: green; }
+  </style>
+</head>
+<body>
+  <h1>Laboratório de Strings e Datas</h1>
+  <section>
+    <h2>1. Inverter Frase</h2>
+    <input id="frase1" placeholder="Digite uma frase">
+    <button onclick="inverterFrase()">Inverter</button>
+    <p id="resposta1"></p>
+  </section>
+  <section>
+    <h2>2. Negritar Vogais</h2>
+    <input id="frase2" placeholder="Digite uma frase">
+    <button onclick="negritarVogais()">Negritar</button>
+    <p id="resposta2"></p>
+  </section>
+  <section>
+    <h2>3. Contar Palavras</h2>
+    <textarea id="texto3" placeholder="Digite um texto"></textarea>
+    <button onclick="contarPalavras()">Contar Palavras</button>
+    <table id="resposta3"></table>
+  </section>
+  <section>
+    <h2>4. Estatísticas de Texto</h2>
+    <textarea id="texto4" placeholder="Digite um texto"></textarea>
+    <button onclick="estatisticasTexto()">Ver Estatísticas</button>
+    <p id="resposta4"></p>
+  </section>
+  <section>
+    <h2>5. Substituir Texto</h2>
+    <textarea id="texto5" placeholder="Texto original"></textarea>
+    <input id="procurar5" placeholder="Procurar">
+    <input id="substituir5" placeholder="Substituir por">
+    <button onclick="substituirTexto()">Substituir</button>
+    <p id="resposta5"></p>
+  </section>
+  <section>
+    <h2>6. Data por Extenso</h2>
+    <input id="data6" placeholder="dd/mm/aaaa">
+    <button onclick="dataPorExtenso()">Converter</button>
+    <p id="resposta6"></p>
+  </section>
+  <section>
+    <h2>7. Força da Senha</h2>
+    <input id="senha7" placeholder="Digite a senha" oninput="classificarSenha()">
+    <p id="resposta7"></p>
+  </section>
+  <section>
+    <h2>8. Codificador TENIS/POLAR</h2>
+    <input id="frase8" placeholder="Digite uma frase">
+    <button onclick="codificarFrase()">Codificar</button>
+    <p id="resposta8"></p>
+  </section>
+  <section>
+    <h2>9. Dias de Vida</h2>
+    <input id="data9" placeholder="dd/mm/aaaa">
+    <button onclick="calcularDiasDeVida()">Calcular</button>
+    <p id="resposta9"></p>
+  </section>
+  <section>
+    <h2>10. Diferença em Semanas</h2>
+    <input id="data10a" placeholder="dd/mm/aaaa">
+    <input id="data10b" placeholder="dd/mm/aaaa">
+    <button onclick="calcularSemanas()">Calcular semanas</button>
+    <p id="resposta10"></p>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
